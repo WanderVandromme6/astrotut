@@ -1,7 +1,7 @@
 ---
 import { literal } from "astro:schema";
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";    
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 
 const pageTitle = "About Me";
@@ -42,7 +42,7 @@ const textCase = "uppercase";
     </style>
   </head>
   <body>
-    <Navigation/>
+    <Header />
 
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
@@ -88,6 +88,9 @@ const textCase = "uppercase";
         <p>My goal is not 3 days.</p>
       )
     }
-    <Footer/>
+    <Footer />
+    <script>
+      import "../scripts/menu.js";
+    </script>
   </body>
 </html>
